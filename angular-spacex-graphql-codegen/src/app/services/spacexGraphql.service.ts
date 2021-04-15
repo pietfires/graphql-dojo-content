@@ -1024,12 +1024,31 @@ export type PastLaunchesListQuery = (
   )>>> }
 );
 
+export const LaunchDetailsDocument = gql`
+    query launchDetails($id: ID!) {
+  launch(id: $id) {
+    id
+    mission_name
+    details
+    links {
+      flickr_images
+      mission_patch
+    }
+  }
+}
+    `;
 
-
-  /*
-  Question 1
-  We need a query to fetch a list of past launches, that use the limit variable as shown below, you need to find that query in the SPACEX API (https://api.spacex.land/graphql/), and retrieve the following fields from it:
-      id
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class LaunchDetailsGQL extends Apollo.Query<LaunchDetailsQuery, LaunchDetailsQueryVariables> {
+    document = LaunchDetailsDocument;
+    
+  }
+export const PastLaunchesListDocument = gql`
+    query pastLaunchesList($limit: Int!) {
+  launchesPast(limit: $limit) {
+    id
     mission_name
     links {
       flickr_images
@@ -1039,47 +1058,14 @@ export type PastLaunchesListQuery = (
       rocket_name
     }
     launch_date_utc
-  */
- export const PastLaunchesListDocument = gql`
- query pastLaunchesList($limit: Int!) {
-your_query_name_here(limit: $limit) {
- # Your Query fields here
-}
-}
- `;
-
-@Injectable({
- providedIn: 'root'
-})
-export class PastLaunchesListGQL extends Apollo.Query<PastLaunchesListQuery, PastLaunchesListQueryVariables> {
- document = PastLaunchesListDocument;
- 
-}
-
-
-  /*
-  Question 2
-  We need a query to fetch a launch based on its id, you need to find that query in the SPACEX API (https://api.spacex.land/graphql/), and retrieve the following fields from it:
-    id
-    mission_name
-    details
-    links {
-      flickr_images
-      mission_patch
-    }
-
-    **|HINT|** the parameter for the query can be defined by using the same syntax as Question 1
-  */
-export const LaunchDetailsDocument = gql`
-    query launchDetails($id: ID!) {
-      # Your Query and fields here
+  }
 }
     `;
 
   @Injectable({
     providedIn: 'root'
   })
-  export class LaunchDetailsGQL extends Apollo.Query<LaunchDetailsQuery, LaunchDetailsQueryVariables> {
-    document = LaunchDetailsDocument;
+  export class PastLaunchesListGQL extends Apollo.Query<PastLaunchesListQuery, PastLaunchesListQueryVariables> {
+    document = PastLaunchesListDocument;
     
   }
