@@ -11,5 +11,7 @@ Our goal is to make an Angular app with a list of the past SpaceX launches along
 ![Details view](/angular-spacex-graphql-codegen/details-example.jpg)
 
 ## Steps
-1. npm install
-2. npm start
+1. Install Angular - https://angular.io/guide/setup-local
+2. cd angular-spacex-graphql-codegen/
+3. npm install (takes a while so please do this before the session)
+4. npm start
