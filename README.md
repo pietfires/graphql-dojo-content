@@ -6,9 +6,9 @@ Our goal is to make an Angular app with a list of the past SpaceX launches along
 
 ## End Result
 
-![List view](list-example.jpg)
+![List view](/angular-spacex-graphql-codegen/list-example.jpg)
 
-![Details view](details-example.jpg)
+![Details view](/angular-spacex-graphql-codegen/details-example.jpg)
 
 ## Steps
 1. npm install
