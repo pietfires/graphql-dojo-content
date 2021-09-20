@@ -17,14 +17,14 @@ export type Scalars = {
 
 
 export type Address = {
-   __typename?: 'Address',
+  __typename?: 'Address',
   address?: Maybe<Scalars['String']>,
   city?: Maybe<Scalars['String']>,
   state?: Maybe<Scalars['String']>,
 };
 
 export type Capsule = {
-   __typename?: 'Capsule',
+  __typename?: 'Capsule',
   id?: Maybe<Scalars['ID']>,
   landings?: Maybe<Scalars['Int']>,
   missions?: Maybe<Array<Maybe<CapsuleMission>>>,
@@ -36,7 +36,7 @@ export type Capsule = {
 };
 
 export type CapsuleMission = {
-   __typename?: 'CapsuleMission',
+  __typename?: 'CapsuleMission',
   flight?: Maybe<Scalars['Int']>,
   name?: Maybe<Scalars['String']>,
 };
@@ -52,7 +52,7 @@ export type CapsulesFind = {
 };
 
 export type Core = {
-   __typename?: 'Core',
+  __typename?: 'Core',
   asds_attempts?: Maybe<Scalars['Int']>,
   asds_landings?: Maybe<Scalars['Int']>,
   block?: Maybe<Scalars['Int']>,
@@ -67,7 +67,7 @@ export type Core = {
 };
 
 export type CoreMission = {
-   __typename?: 'CoreMission',
+  __typename?: 'CoreMission',
   name?: Maybe<Scalars['String']>,
   flight?: Maybe<Scalars['Int']>,
 };
@@ -88,13 +88,13 @@ export type CoresFind = {
 
 
 export type Distance = {
-   __typename?: 'Distance',
+  __typename?: 'Distance',
   feet?: Maybe<Scalars['Float']>,
   meters?: Maybe<Scalars['Float']>,
 };
 
 export type Dragon = {
-   __typename?: 'Dragon',
+  __typename?: 'Dragon',
   active?: Maybe<Scalars['Boolean']>,
   crew_capacity?: Maybe<Scalars['Int']>,
   description?: Maybe<Scalars['String']>,
@@ -120,7 +120,7 @@ export type Dragon = {
 };
 
 export type DragonHeatShield = {
-   __typename?: 'DragonHeatShield',
+  __typename?: 'DragonHeatShield',
   dev_partner?: Maybe<Scalars['String']>,
   material?: Maybe<Scalars['String']>,
   size_meters?: Maybe<Scalars['Float']>,
@@ -128,12 +128,12 @@ export type DragonHeatShield = {
 };
 
 export type DragonPressurizedCapsule = {
-   __typename?: 'DragonPressurizedCapsule',
+  __typename?: 'DragonPressurizedCapsule',
   payload_volume?: Maybe<Volume>,
 };
 
 export type DragonThrust = {
-   __typename?: 'DragonThrust',
+  __typename?: 'DragonThrust',
   amount?: Maybe<Scalars['Int']>,
   fuel_1?: Maybe<Scalars['String']>,
   fuel_2?: Maybe<Scalars['String']>,
@@ -143,31 +143,31 @@ export type DragonThrust = {
 };
 
 export type DragonTrunk = {
-   __typename?: 'DragonTrunk',
+  __typename?: 'DragonTrunk',
   cargo?: Maybe<DragonTrunkCargo>,
   trunk_volume?: Maybe<Volume>,
 };
 
 export type DragonTrunkCargo = {
-   __typename?: 'DragonTrunkCargo',
+  __typename?: 'DragonTrunkCargo',
   solar_array?: Maybe<Scalars['Int']>,
   unpressurized_cargo?: Maybe<Scalars['Boolean']>,
 };
 
 export type Force = {
-   __typename?: 'Force',
+  __typename?: 'Force',
   kN?: Maybe<Scalars['Float']>,
   lbf?: Maybe<Scalars['Float']>,
 };
 
 export type HistoriesResult = {
-   __typename?: 'HistoriesResult',
+  __typename?: 'HistoriesResult',
   result?: Maybe<Result>,
   data?: Maybe<Array<Maybe<History>>>,
 };
 
 export type History = {
-   __typename?: 'History',
+  __typename?: 'History',
   details?: Maybe<Scalars['String']>,
   event_date_unix?: Maybe<Scalars['Date']>,
   event_date_utc?: Maybe<Scalars['Date']>,
@@ -185,7 +185,7 @@ export type HistoryFind = {
 };
 
 export type Info = {
-   __typename?: 'Info',
+  __typename?: 'Info',
   ceo?: Maybe<Scalars['String']>,
   coo?: Maybe<Scalars['String']>,
   cto_propulsion?: Maybe<Scalars['String']>,
@@ -204,7 +204,7 @@ export type Info = {
 };
 
 export type InfoLinks = {
-   __typename?: 'InfoLinks',
+  __typename?: 'InfoLinks',
   elon_twitter?: Maybe<Scalars['String']>,
   flickr?: Maybe<Scalars['String']>,
   twitter?: Maybe<Scalars['String']>,
@@ -212,7 +212,7 @@ export type InfoLinks = {
 };
 
 export type Landpad = {
-   __typename?: 'Landpad',
+  __typename?: 'Landpad',
   attempted_landings?: Maybe<Scalars['String']>,
   details?: Maybe<Scalars['String']>,
   full_name?: Maybe<Scalars['String']>,
@@ -225,7 +225,7 @@ export type Landpad = {
 };
 
 export type Launch = {
-   __typename?: 'Launch',
+  __typename?: 'Launch',
   details?: Maybe<Scalars['String']>,
   id?: Maybe<Scalars['ID']>,
   is_tentative?: Maybe<Scalars['Boolean']>,
@@ -248,7 +248,7 @@ export type Launch = {
 };
 
 export type LaunchesPastResult = {
-   __typename?: 'LaunchesPastResult',
+  __typename?: 'LaunchesPastResult',
   result?: Maybe<Result>,
   data?: Maybe<Array<Maybe<Launch>>>,
 };
@@ -317,7 +317,7 @@ export type LaunchFind = {
 };
 
 export type LaunchLinks = {
-   __typename?: 'LaunchLinks',
+  __typename?: 'LaunchLinks',
   article_link?: Maybe<Scalars['String']>,
   flickr_images?: Maybe<Array<Maybe<Scalars['String']>>>,
   mission_patch_small?: Maybe<Scalars['String']>,
@@ -332,7 +332,7 @@ export type LaunchLinks = {
 };
 
 export type Launchpad = {
-   __typename?: 'Launchpad',
+  __typename?: 'Launchpad',
   attempted_launches?: Maybe<Scalars['Int']>,
   details?: Maybe<Scalars['String']>,
   id?: Maybe<Scalars['ID']>,
@@ -345,7 +345,7 @@ export type Launchpad = {
 };
 
 export type LaunchRocket = {
-   __typename?: 'LaunchRocket',
+  __typename?: 'LaunchRocket',
   fairings?: Maybe<LaunchRocketFairings>,
   first_stage?: Maybe<LaunchRocketFirstStage>,
   rocket_name?: Maybe<Scalars['String']>,
@@ -355,7 +355,7 @@ export type LaunchRocket = {
 };
 
 export type LaunchRocketFairings = {
-   __typename?: 'LaunchRocketFairings',
+  __typename?: 'LaunchRocketFairings',
   recovered?: Maybe<Scalars['Boolean']>,
   recovery_attempt?: Maybe<Scalars['Boolean']>,
   reused?: Maybe<Scalars['Boolean']>,
@@ -363,12 +363,12 @@ export type LaunchRocketFairings = {
 };
 
 export type LaunchRocketFirstStage = {
-   __typename?: 'LaunchRocketFirstStage',
+  __typename?: 'LaunchRocketFirstStage',
   cores?: Maybe<Array<Maybe<LaunchRocketFirstStageCore>>>,
 };
 
 export type LaunchRocketFirstStageCore = {
-   __typename?: 'LaunchRocketFirstStageCore',
+  __typename?: 'LaunchRocketFirstStageCore',
   block?: Maybe<Scalars['Int']>,
   core?: Maybe<Core>,
   flight?: Maybe<Scalars['Int']>,
@@ -382,32 +382,32 @@ export type LaunchRocketFirstStageCore = {
 };
 
 export type LaunchRocketSecondStage = {
-   __typename?: 'LaunchRocketSecondStage',
+  __typename?: 'LaunchRocketSecondStage',
   block?: Maybe<Scalars['Int']>,
   payloads?: Maybe<Array<Maybe<Payload>>>,
 };
 
 export type LaunchSite = {
-   __typename?: 'LaunchSite',
+  __typename?: 'LaunchSite',
   site_id?: Maybe<Scalars['String']>,
   site_name_long?: Maybe<Scalars['String']>,
   site_name?: Maybe<Scalars['String']>,
 };
 
 export type LaunchTelemetry = {
-   __typename?: 'LaunchTelemetry',
+  __typename?: 'LaunchTelemetry',
   flight_club?: Maybe<Scalars['String']>,
 };
 
 export type Link = {
-   __typename?: 'Link',
+  __typename?: 'Link',
   article?: Maybe<Scalars['String']>,
   reddit?: Maybe<Scalars['String']>,
   wikipedia?: Maybe<Scalars['String']>,
 };
 
 export type Location = {
-   __typename?: 'Location',
+  __typename?: 'Location',
   latitude?: Maybe<Scalars['Float']>,
   longitude?: Maybe<Scalars['Float']>,
   name?: Maybe<Scalars['String']>,
@@ -415,13 +415,13 @@ export type Location = {
 };
 
 export type Mass = {
-   __typename?: 'Mass',
+  __typename?: 'Mass',
   kg?: Maybe<Scalars['Int']>,
   lb?: Maybe<Scalars['Int']>,
 };
 
 export type Mission = {
-   __typename?: 'Mission',
+  __typename?: 'Mission',
   description?: Maybe<Scalars['String']>,
   id?: Maybe<Scalars['ID']>,
   manufacturers?: Maybe<Array<Maybe<Scalars['String']>>>,
@@ -433,7 +433,7 @@ export type Mission = {
 };
 
 export type MissionResult = {
-   __typename?: 'MissionResult',
+  __typename?: 'MissionResult',
   result?: Maybe<Result>,
   data?: Maybe<Array<Maybe<Mission>>>,
 };
@@ -447,7 +447,7 @@ export type MissionsFind = {
 
 
 export type Payload = {
-   __typename?: 'Payload',
+  __typename?: 'Payload',
   customers?: Maybe<Array<Maybe<Scalars['String']>>>,
   id?: Maybe<Scalars['ID']>,
   manufacturer?: Maybe<Scalars['String']>,
@@ -462,7 +462,7 @@ export type Payload = {
 };
 
 export type PayloadOrbitParams = {
-   __typename?: 'PayloadOrbitParams',
+  __typename?: 'PayloadOrbitParams',
   apoapsis_km?: Maybe<Scalars['Float']>,
   arg_of_pericenter?: Maybe<Scalars['Float']>,
   eccentricity?: Maybe<Scalars['Float']>,
@@ -505,7 +505,7 @@ export type PayloadsFind = {
 };
 
 export type Query = {
-   __typename?: 'Query',
+  __typename?: 'Query',
   capsules?: Maybe<Array<Maybe<Capsule>>>,
   capsulesPast?: Maybe<Array<Maybe<Capsule>>>,
   capsulesUpcoming?: Maybe<Array<Maybe<Capsule>>>,
@@ -790,12 +790,12 @@ export type QueryShipArgs = {
 };
 
 export type Result = {
-   __typename?: 'Result',
+  __typename?: 'Result',
   totalCount?: Maybe<Scalars['Int']>,
 };
 
 export type Roadster = {
-   __typename?: 'Roadster',
+  __typename?: 'Roadster',
   apoapsis_au?: Maybe<Scalars['Float']>,
   details?: Maybe<Scalars['String']>,
   earth_distance_km?: Maybe<Scalars['Float']>,
@@ -823,7 +823,7 @@ export type Roadster = {
 };
 
 export type Rocket = {
-   __typename?: 'Rocket',
+  __typename?: 'Rocket',
   active?: Maybe<Scalars['Boolean']>,
   boosters?: Maybe<Scalars['Int']>,
   company?: Maybe<Scalars['String']>,
@@ -848,7 +848,7 @@ export type Rocket = {
 };
 
 export type RocketEngines = {
-   __typename?: 'RocketEngines',
+  __typename?: 'RocketEngines',
   number?: Maybe<Scalars['Int']>,
   type?: Maybe<Scalars['String']>,
   version?: Maybe<Scalars['String']>,
@@ -862,7 +862,7 @@ export type RocketEngines = {
 };
 
 export type RocketFirstStage = {
-   __typename?: 'RocketFirstStage',
+  __typename?: 'RocketFirstStage',
   burn_time_sec?: Maybe<Scalars['Int']>,
   engines?: Maybe<Scalars['Int']>,
   fuel_amount_tons?: Maybe<Scalars['Float']>,
@@ -872,13 +872,13 @@ export type RocketFirstStage = {
 };
 
 export type RocketLandingLegs = {
-   __typename?: 'RocketLandingLegs',
+  __typename?: 'RocketLandingLegs',
   number?: Maybe<Scalars['Int']>,
   material?: Maybe<Scalars['String']>,
 };
 
 export type RocketPayloadWeight = {
-   __typename?: 'RocketPayloadWeight',
+  __typename?: 'RocketPayloadWeight',
   id?: Maybe<Scalars['String']>,
   kg?: Maybe<Scalars['Int']>,
   lb?: Maybe<Scalars['Int']>,
@@ -886,7 +886,7 @@ export type RocketPayloadWeight = {
 };
 
 export type RocketSecondStage = {
-   __typename?: 'RocketSecondStage',
+  __typename?: 'RocketSecondStage',
   burn_time_sec?: Maybe<Scalars['Int']>,
   engines?: Maybe<Scalars['Int']>,
   fuel_amount_tons?: Maybe<Scalars['Float']>,
@@ -895,25 +895,25 @@ export type RocketSecondStage = {
 };
 
 export type RocketSecondStagePayloadCompositeFairing = {
-   __typename?: 'RocketSecondStagePayloadCompositeFairing',
+  __typename?: 'RocketSecondStagePayloadCompositeFairing',
   height?: Maybe<Distance>,
   diameter?: Maybe<Distance>,
 };
 
 export type RocketSecondStagePayloads = {
-   __typename?: 'RocketSecondStagePayloads',
+  __typename?: 'RocketSecondStagePayloads',
   option_1?: Maybe<Scalars['String']>,
   composite_fairing?: Maybe<RocketSecondStagePayloadCompositeFairing>,
 };
 
 export type RocketsResult = {
-   __typename?: 'RocketsResult',
+  __typename?: 'RocketsResult',
   result?: Maybe<Result>,
   data?: Maybe<Array<Maybe<Rocket>>>,
 };
 
 export type Ship = {
-   __typename?: 'Ship',
+  __typename?: 'Ship',
   abs?: Maybe<Scalars['Int']>,
   active?: Maybe<Scalars['Boolean']>,
   attempted_landings?: Maybe<Scalars['Int']>,
@@ -940,13 +940,13 @@ export type Ship = {
 };
 
 export type ShipLocation = {
-   __typename?: 'ShipLocation',
+  __typename?: 'ShipLocation',
   latitude?: Maybe<Scalars['Float']>,
   longitude?: Maybe<Scalars['Float']>,
 };
 
 export type ShipMission = {
-   __typename?: 'ShipMission',
+  __typename?: 'ShipMission',
   flight?: Maybe<Scalars['String']>,
   name?: Maybe<Scalars['String']>,
 };
@@ -977,13 +977,13 @@ export type ShipsFind = {
 };
 
 export type ShipsResult = {
-   __typename?: 'ShipsResult',
+  __typename?: 'ShipsResult',
   result?: Maybe<Result>,
   data?: Maybe<Array<Maybe<Ship>>>,
 };
 
 export type Volume = {
-   __typename?: 'Volume',
+  __typename?: 'Volume',
   cubic_feet?: Maybe<Scalars['Int']>,
   cubic_meters?: Maybe<Scalars['Int']>,
 };
@@ -994,14 +994,18 @@ export type LaunchDetailsQueryVariables = {
 
 export type LaunchDetailsQuery = (
   { __typename?: 'Query' }
-  & { launch: Maybe<(
-    { __typename?: 'Launch' }
-    & Pick<Launch, 'id' | 'mission_name' | 'details'>
-    & { links: Maybe<(
-      { __typename?: 'LaunchLinks' }
-      & Pick<LaunchLinks, 'flickr_images' | 'mission_patch'>
-    )> }
-  )> }
+  & {
+    launch: Maybe<(
+      { __typename?: 'Launch' }
+      & Pick<Launch, 'id' | 'mission_name' | 'details'>
+      & {
+        links: Maybe<(
+          { __typename?: 'LaunchLinks' }
+          & Pick<LaunchLinks, 'flickr_images' | 'mission_patch'>
+        )>
+      }
+    )>
+  }
 );
 
 export type PastLaunchesListQueryVariables = {
@@ -1011,20 +1015,72 @@ export type PastLaunchesListQueryVariables = {
 
 export type PastLaunchesListQuery = (
   { __typename?: 'Query' }
-  & { launchesPast: Maybe<Array<Maybe<(
-    { __typename?: 'Launch' }
-    & Pick<Launch, 'id' | 'mission_name' | 'launch_date_utc'>
-    & { links: Maybe<(
-      { __typename?: 'LaunchLinks' }
-      & Pick<LaunchLinks, 'flickr_images' | 'mission_patch_small'>
-    )>, rocket: Maybe<(
-      { __typename?: 'LaunchRocket' }
-      & Pick<LaunchRocket, 'rocket_name'>
-    )> }
-  )>>> }
+  & {
+    launchesPast: Maybe<Array<Maybe<(
+      { __typename?: 'Launch' }
+      & Pick<Launch, 'id' | 'mission_name' | 'launch_date_utc'>
+      & {
+        links: Maybe<(
+          { __typename?: 'LaunchLinks' }
+          & Pick<LaunchLinks, 'flickr_images' | 'mission_patch_small'>
+        )>, rocket: Maybe<(
+          { __typename?: 'LaunchRocket' }
+          & Pick<LaunchRocket, 'rocket_name'>
+        )>
+      }
+    )>>>
+  }
 );
+/*
+Question 1
+We need a query to fetch a list of past launches, that use the limit variable as shown below, you need to find that query in the SPACEX API (https://api.spacex.land/graphql/), and retrieve the following fields from it:
+  id
+mission_name
+links {
+  flickr_images
+  mission_patch_small
+}
+rocket {
+  rocket_name
+}
+launch_date_utc
+*/
+export const PastLaunchesListDocument = gql`
+query pastLaunchesList($limit: Int!) {
+launchesPast(limit: $limit) {
+id
+mission_name
+links {
+  flickr_images
+  mission_patch_small
+}
+rocket {
+  rocket_name
+}
+launch_date_utc
+}
+}
+`;
 
-export const LaunchDetailsDocument = gql`
+@Injectable({
+  providedIn: 'root'
+})
+export class PastLaunchesListGQL extends Apollo.Query<PastLaunchesListQuery, PastLaunchesListQueryVariables> {
+  document = PastLaunchesListDocument;
+  /*
+  Question 2
+  We need a query to fetch a launch based on its id, you need to find that query in the SPACEX API (https://api.spacex.land/graphql/), and retrieve the following fields from it:
+    id
+    mission_name
+    details
+    links {
+      flickr_images
+      mission_patch
+    }
+
+    **|HINT|** the parameter for the query can be defined by using the same syntax as Question 1
+  */
+  export const LaunchDetailsDocument = gql`
     query launchDetails($id: ID!) {
   launch(id: $id) {
     id
@@ -1036,6 +1092,7 @@ export const LaunchDetailsDocument = gql`
     }
   }
 }
+
     `;
 
   @Injectable({
@@ -1043,29 +1100,6 @@ export const LaunchDetailsDocument = gql`
   })
   export class LaunchDetailsGQL extends Apollo.Query<LaunchDetailsQuery, LaunchDetailsQueryVariables> {
     document = LaunchDetailsDocument;
-    
-  }
-export const PastLaunchesListDocument = gql`
-    query pastLaunchesList($limit: Int!) {
-  launchesPast(limit: $limit) {
-    id
-    mission_name
-    links {
-      flickr_images
-      mission_patch_small
-    }
-    rocket {
-      rocket_name
-    }
-    launch_date_utc
+
   }
 }
-    `;
-
-  @Injectable({
-    providedIn: 'root'
-  })
-  export class PastLaunchesListGQL extends Apollo.Query<PastLaunchesListQuery, PastLaunchesListQueryVariables> {
-    document = PastLaunchesListDocument;
-    
-  }
