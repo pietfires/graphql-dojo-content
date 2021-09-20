@@ -1,0 +1,17 @@
+type Car {
+    id: ID!
+    registrationNumber: String!
+    licenseExpirationDate: Date!
+    fuelTankCapacity: Int
+    fuelLevel: Int
+    driver: Driver
+}
+
+type Driver {
+    id: ID!
+    name: String
+    surname: String
+    idNumber: String!
+    dateOfBirth: Date
+    cars: [Car!]
+}

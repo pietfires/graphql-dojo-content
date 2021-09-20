@@ -1,0 +1,9 @@
+type query {
+allDrivers:[Driver!]
+carByRegistration(registration: String!): Car
+}
+
+type mutation {
+updateCarLicenseExpiryDate(id:ID!, expityDate: Date!): Car!
+deleteDriver(id: ID!): Boolean!
+}
